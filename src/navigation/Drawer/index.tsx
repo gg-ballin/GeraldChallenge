@@ -4,15 +4,15 @@ import Animated, { Node } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { styles } from '../styles';
-import StartStack from '../stack';
 import DrawerContent from '../components/DrawerContent';
+import StartTab from '../../modules/start/screens/TabNavigator';
 
 const DrawerNav = createDrawerNavigator();
 
-const Screens = ({ style }) => {
+const Screens = ({ style }: any) => {
   return (
     <Animated.View style={StyleSheet.flatten([styles.stack, style])}>
-      <StartStack />
+      <StartTab />
     </Animated.View>
   );
 };

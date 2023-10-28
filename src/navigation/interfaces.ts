@@ -1,25 +1,18 @@
-import {DrawerScreenProps} from '@react-navigation/drawer';
-import {CartScreenParams} from '../modules/cart/interfaces';
-import {StackScreenProps} from '@react-navigation/stack';
+import { DrawerScreenProps } from '@react-navigation/drawer';
+
+import { StackScreenProps } from '@react-navigation/stack';
+import { StartScreenParams } from '../modules/start/screens/Home/screens/interfaces';
 
 export type DrawerScreenParams = {
   StartStack: undefined;
-  FavouritesStack: undefined;
-  CartStack: undefined;
-  OrdersStack: undefined;
 };
 
 export type StackScreenParams = {
   Start: undefined;
   StartContact: undefined;
-  Favourites: undefined;
-  FavouritesContact: undefined;
-  Cart: undefined;
-  CartContact: undefined;
-  Orders: undefined;
-  OrdersContact: undefined;
 };
-type ScreensParams = CartScreenParams;
+
+type ScreensParams = StartScreenParams;
 
 export type RootScreenParams = DrawerScreenParams &
   StackScreenParams &

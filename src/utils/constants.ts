@@ -1,4 +1,5 @@
-import {Dimensions, Platform} from 'react-native';
+import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
+import { Dimensions, Platform } from 'react-native';
 
 const windowDimensions = Dimensions.get('window');
 export const WINDOW_HEIGHT = windowDimensions.height;
@@ -11,3 +12,13 @@ export const SCREEN_WIDTH = screenDimensions.width;
 export const isIos = Platform.OS === 'ios';
 export const isAndroid = Platform.OS === 'android';
 export const IS_X = isIos && (SCREEN_HEIGHT > 800 || WINDOW_WIDTH > 800);
+
+export const tabBarOptions = {
+  activeTintColor: 'white',
+  inactiveTintColor: 'black',
+  style: {
+    backgroundColor: 'grey',
+    borderTopLeftRadius: 48,
+    borderTopRightRadius: 48,
+  },
+};
