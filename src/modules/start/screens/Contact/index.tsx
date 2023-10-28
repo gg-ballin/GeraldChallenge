@@ -1,21 +1,20 @@
 import React from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 
-import Header from '../../../../../../components/Header';
-import { Colors } from '../../../../../../utils/theme';
+import Header from '../../../../components/Header';
+import { Colors } from '../../../../utils/theme';
 
-const Screen_1 = () => {
+const StartContact = () => {
   return (
-    <>
-      <SafeAreaView />
+    <SafeAreaView style={styles.container}>
       <View style={styles.wrapper}>
-        <Header title="SCREEN 2" goBack />
+        <Header title="START CONTACT" />
       </View>
-    </>
+    </SafeAreaView>
   );
 };
 
-export default Screen_1;
+export default StartContact;
 
 const styles = StyleSheet.create({
   container: {
@@ -23,7 +22,6 @@ const styles = StyleSheet.create({
     backgroundColor: Colors.white,
   },
   wrapper: {
-    flex: 1,
     padding: 16,
     paddingVertical: 20,
   },

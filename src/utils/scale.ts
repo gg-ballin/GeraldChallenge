@@ -1,4 +1,4 @@
-import {SCREEN_HEIGHT, SCREEN_WIDTH} from './constants';
+import { SCREEN_HEIGHT, SCREEN_WIDTH } from './constants';
 const [shortDimension, longDimension] =
   SCREEN_WIDTH < SCREEN_HEIGHT
     ? [SCREEN_WIDTH, SCREEN_HEIGHT]
@@ -12,4 +12,4 @@ const verticalScale = (size: number) =>
   (longDimension / guidelineBaseHeight) * size;
 const moderateScale = (size: number, factor = DEFAULT_MODERATE_SCALE_FACTOR) =>
   size + (scale(size) - size) * factor;
-export {scale, verticalScale, moderateScale};
+export { scale, verticalScale, moderateScale };

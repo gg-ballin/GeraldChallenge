@@ -1,6 +1,6 @@
 import React from 'react';
 import { createStackNavigator } from '@react-navigation/stack';
-import Start from '../modules/start/screens';
+import Start from '../../modules/start/screens/Home/screens/HomeScreen';
 
 const Stack = createStackNavigator();
 
@@ -14,12 +14,7 @@ const options = {
 
 const StartStack = () => (
   <Stack.Navigator>
-    <Stack.Screen
-      options={{ ...options, title: 'Your Cart' }}
-      name="Start"
-      component={Start}
-    />
-    <Stack.Screen options={options} name="Orders" component={Start} />
+    <Stack.Screen options={{ ...options }} name="Start" component={Start} />
   </Stack.Navigator>
 );
 

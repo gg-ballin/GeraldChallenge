@@ -4,15 +4,16 @@ import Animated, { Node } from 'react-native-reanimated';
 import { useSafeAreaInsets } from 'react-native-safe-area-context';
 import { createDrawerNavigator } from '@react-navigation/drawer';
 import { styles } from '../styles';
-import StartStack from '../stack';
 import DrawerContent from '../components/DrawerContent';
+import StartTab from '../../modules/start/screens/TabNavigator';
+import { Colors } from '../../utils/theme';
 
 const DrawerNav = createDrawerNavigator();
 
-const Screens = ({ style }) => {
+const Screens = ({ style }: any) => {
   return (
     <Animated.View style={StyleSheet.flatten([styles.stack, style])}>
-      <StartStack />
+      <StartTab />
     </Animated.View>
   );
 };
@@ -47,7 +48,7 @@ const Drawer = () => {
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       <DrawerNav.Navigator
-        overlayColor="#00000000"
+        overlayColor={Colors.overlayColor}
         sceneContainerStyle={styles.contentZIndex}
         drawerType="slide"
         drawerPosition="left"

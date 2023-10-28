@@ -25,6 +25,8 @@ const styles = StyleSheet.create({
   },
   stack: {
     flex: 1,
+    borderTopLeftRadius: 38,
+    backgroundColor: 'white',
   },
   contentZIndex: {
     zIndex: 1,

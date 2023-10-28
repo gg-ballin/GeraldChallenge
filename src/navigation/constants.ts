@@ -1,14 +1,7 @@
-import {createRef} from 'react';
-import {Platform, StyleSheet} from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
+import { DrawerNavigationOptions } from '@react-navigation/drawer';
 
-import {NavigationContainerRefWithCurrent} from '@react-navigation/native';
-
-import {RootScreenParams} from './interfaces';
-import {Colors} from '../utils/theme';
-import {DrawerNavigationOptions} from '@react-navigation/drawer';
-
-export const navigationRef =
-  createRef<NavigationContainerRefWithCurrent<RootScreenParams>>();
+import { Colors } from '../utils/theme';
 
 export const TAB_STYLES = StyleSheet.create({
   tabBar: {

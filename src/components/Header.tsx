@@ -2,6 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
 import DrawerButton from './DrawerButton';
 import { DrawerActions, useNavigation } from '@react-navigation/native';
+import ArrowLeft from './ArrowLeft';
 
 type Props = {
   title: string;
@@ -15,7 +16,7 @@ const Header = ({ title, goBack }: Props) => {
     return (
       <View style={styles.wrapper}>
         <TouchableOpacity onPress={() => navigation.goBack()}>
-          <Text>Back</Text>
+          <ArrowLeft />
         </TouchableOpacity>
         <Text style={styles.title}>{title}</Text>
       </View>

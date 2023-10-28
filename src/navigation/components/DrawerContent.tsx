@@ -7,6 +7,7 @@ import {
 } from '@react-navigation/drawer';
 import { styles } from '../styles';
 import { StyleSheet, Text, View } from 'react-native';
+import { Colors } from '../../utils/theme';
 
 const DrawerContent = (props: DrawerContentComponentProps) => (
   <DrawerContentScrollView {...props}>
@@ -42,8 +43,8 @@ const drawerStyles = StyleSheet.create({
 });
 const DrawerItemCommonProps = {
   labelStyle: styles.drawerItemLabel,
-  activeBackgroundColor: 'rgba(252, 128, 116, 0.2)',
-  activeTintColor: '#FC8074',
+  activeBackgroundColor: Colors.activeBackground,
+  activeTintColor: Colors.active,
   inactiveTintColor: 'white',
   inactiveBackgroundColor: 'transparent',
 };
