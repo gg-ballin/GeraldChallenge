@@ -6,6 +6,7 @@ import { createDrawerNavigator } from '@react-navigation/drawer';
 import { styles } from '../styles';
 import DrawerContent from '../components/DrawerContent';
 import StartTab from '../../modules/start/screens/TabNavigator';
+import { Colors } from '../../utils/theme';
 
 const DrawerNav = createDrawerNavigator();
 
@@ -47,7 +48,7 @@ const Drawer = () => {
   return (
     <View style={[styles.container, { paddingTop: insets.top }]}>
       <DrawerNav.Navigator
-        overlayColor="#00000000"
+        overlayColor={Colors.overlayColor}
         sceneContainerStyle={styles.contentZIndex}
         drawerType="slide"
         drawerPosition="left"

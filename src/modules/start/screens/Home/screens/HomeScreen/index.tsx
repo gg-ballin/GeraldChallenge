@@ -3,7 +3,7 @@ import { StyleSheet, SafeAreaView, View } from 'react-native';
 import { DrawerScreenComponent } from '../../../../../../navigation/interfaces';
 
 import Header from '../../../../../../components/Header';
-import Button from '../../components/Button';
+import Button from '../../../../../../components/Button';
 
 const Start = ({ navigation }: DrawerScreenComponent) => {
   return (

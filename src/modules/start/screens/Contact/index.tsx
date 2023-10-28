@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 
 import Header from '../../../../components/Header';
+import { Colors } from '../../../../utils/theme';
 
 const StartContact = () => {
   return (
@@ -18,7 +19,7 @@ export default StartContact;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
   },
   wrapper: {
     padding: 16,

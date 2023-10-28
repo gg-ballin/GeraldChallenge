@@ -1,4 +1,3 @@
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import { Dimensions, Platform } from 'react-native';
 
 const windowDimensions = Dimensions.get('window');

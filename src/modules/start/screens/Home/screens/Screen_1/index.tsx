@@ -2,6 +2,7 @@ import React from 'react';
 import { StyleSheet, SafeAreaView, View } from 'react-native';
 
 import Header from '../../../../../../components/Header';
+import { Colors } from '../../../../../../utils/theme';
 
 const Screen_1 = () => {
   return (
@@ -19,7 +20,7 @@ export default Screen_1;
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#fff',
+    backgroundColor: Colors.white,
   },
   wrapper: {
     flex: 1,

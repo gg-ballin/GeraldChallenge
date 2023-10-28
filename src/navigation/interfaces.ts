@@ -1,7 +1,7 @@
 import { DrawerScreenProps } from '@react-navigation/drawer';
 
 import { StackScreenProps } from '@react-navigation/stack';
-import { StartScreenParams } from '../modules/start/screens/Home/screens/interfaces';
+import { StartScreenParams } from '../modules/start/screens/Home/types/interfaces';
 
 export type DrawerScreenParams = {
   StartStack: undefined;
